@@ -1,0 +1,50 @@
+\documentclass[a4paper]{report}
+\usepackage{url}
+\usepackage{graphicx}
+%\includeonly{introduction,methodology,relatedwork}
+\begin{document}
+
+\title{A Use case for Controlled Languages in Ontology based Knowledge Management}
+
+\author{Pradeep Varma Dantuluri}
+\date{August 2010}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter*{Declaration and Disclaimer}
+I declare that this thesis is composed by myself, that the work contained herein is my own except where explicitly stated otherwise in the text, and that this work has not been submitted for any other degree or professional qualification except as specified.
+The work reported in this thesis is part of research conducted in DERI, Galway within the DERI L\'{i}on-2 project.
+Pradeep Varma Dantuluri
+
+\chapter*{Acknowledgements}
+
+\begin{abstract}
+Although the Semantic web is steadily gaining in popularity, it remains a mystery to a large percentage of Internet users. This can be attributed to the complexity of the technologies that form its core. Creating intuitive interfaces which completely abstract the technologies underneath, is one way to solve this problem. A contrasting approach is to ease the user into understanding the technologies. We propose a solution which anchors on using controlled languages as interfaces to semantic web applications. This paper describes one such approach for the domain of meeting minutes, status reports and other project specific documents. A controlled language is developed along with an ontology to handle semi-automatic knowledge extraction. The contributions of this paper include an ontology designed for the domain of meeting minutes and status reports, and a controlled language grammar tailored for the above domain to perform the semi-automatic knowledge acquisition and generate RDF triples. This paper also describes two grammar prototypes, which were developed and evaluated prior to the development of the final grammar, as well as the Link grammar, which was the grammar formalism of choice. 
+\end{abstract}
+
+\pagenumbering{arabic}
+
+\include{introduction}
+
+\include{relatedwork}
+
+
+\include{methodology}
+
+\include{evaluation}
+
+\include{conclusion}
+
+\bibliographystyle{plain}
+\bibliography{mastersthesis}
+
+\end{document}
+
+
+
+

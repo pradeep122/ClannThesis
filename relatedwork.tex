@@ -1,0 +1,160 @@
+\chapter{Related Work}
+%\label{ch:relatedwork}
+
+The proposed work touches upon a combination of topics ranging from CNLs and using them as an interface for Knowledge aquisition, Development and maintainence of ontologies,  the Link grammar formalism, and finally Semantic Web and the Linked data . Essentially the work aims to create a smart application which would allow users to write meeting minutes and status reports in a controlled and restricted version of the english language. This controlled language is machine processable, hence parsed, understood and relevant information is extracted. This information is formatted as RDF data (RDF tripples) using a pre-defined ontology and made accesible through linked data standards.
+
+\section{Semantic Web and Semantic Wikis}
+
+
+
+\subsection{Semantic Web}
+\subsection{Linked Data web}
+\subsection{Wikis and Semantic Wikis}
+
+%%
+Other related work involves the application of Controlled Languages
+for Ontology/Knowledge base querying, which represent a different task
+than that of knowledge creation and editing but are worth mentioning
+for completeness sake. Most notably
+\emph{AquaLog}\footnote{\url{http://kmi.open.ac.uk/technologies/aqualog/}}
+is an ontology-driven,portable question-answering (QA) system designed
+to provide a natural language query interface to semantic mark-up
+stored in a knowledge base. PowerAqua \cite{LopezMU06} extends
+AquaLog, allowing for an open domain question-answering for the
+semantic web. The system dynamically locates and combines information
+from multiple domains.
+%%
+Write about Semnatic Web. Write about Linked Data. Explain the reach and progress of Linked data and semantic web with examples. 
+The proposed work aims to use Linked data technologies to open up the data of the application and hence connecting to the huge amount of knowledge already availiable on the internet. This enables the users to efficiently exploit the vast amount of information  according to his need.  
+
+
+\section{Ontologies and Ontology Engineering}
+\subsection{Overview of ontologies}
+\subsection{Ontology languages}
+\subsection{Ontology Engineering}
+\subsubsection{Methontology}
+
+Explain ontologies and their need. Explain a few of the methodologies to maintain and develop ontologies. 
+The domain of meeting minutes and status reports is modelled as the PDO ontology. Further details are described in the section below.
+
+\section{Controlled Languages and the Semantic Annotation}
+\subsection{Controlled Language interfaces for HLT}
+%%
+''Controlled Natural Languages (CNL)s are subsets of natural language
+whose grammars and dictionaries have been restricted in order to
+reduce or eliminate both ambiguity and complexity''\cite{schwitter}.
+CNLs were later developed specifically for computational treatment and
+have subsequently evolved into many variations and flavours such as
+Smart's Plain English Program (PEP) \cite{Adr92a}, White's
+International Language for Serving and Maintenance (ILSAM)
+\cite{Adr92a} and Simplified English\footnote{\url{http://www.simplifiedenglish\-aecma.org/Simplified\_English.htm}}.
+They have also found favour in large multi-national corporations,
+usually within the context of machine translation and machine-aided
+translation of user documentation \cite{schwitter,Adr92a}.
+The application of CNLs for ontology authoring and instance
+population is an active research area.  \emph{Attempto Controlled
+  English}\footnote{\url{http://www.ifi.unizh.ch/attempto/}} (ACE)
+\cite{Fuc96a}, is a popular CNL for ontology authoring.  It is a subset
+of standard English designed for knowledge representation and
+technical specifications, and is constrained to be unambiguously
+machine-readable into DRS - Discourse Representation Structure.
+, a form of first-order logic.  (It can also be re-targeted to other formal
+languages.) \cite{Fuchs06}.  The Attempto Parsing Engine (APE)
+consists principally of a definite clause grammar, augmented with 
+features and inheritance and written in Prolog \cite{Hoefler04}. 
+ACE OWL, a sublanguage of ACE, proposes a means of writing formal,
+simultaneously human- and machine-readable summaries of scientific
+papers \cite{Kaljurand06,Kuhn06}.
+%%
+
+\subsection{Controled Languages for Knowledge Management}
+%%
+The Rabbit CNL is a another well known CNL\cite{dimitrova08}.  It is similar to 
+CLOnE in its implementation but is much more powerful with respect to
+ontology authoring capabilities and expressivity. It has also been favorably
+evaluated by users in the Ordinance Survey domain but is targeted towards
+ontology authoring and not semantic annotations. It has been integrated into
+Semantic Media Wiki, the purpose of which to create a user friendly collaborative
+ontology authoring using multiple CNLs\cite{Bao09}. 
+
+Other related work (in that creates A-box statements) is WYSIWYM (\textit{What you see is
+  what you meant})\cite{Power98}. It involves direct knowledge editing with natural
+language directed feedback. A domain expert can edit a knowledge based
+reliably by interacting with natural language menu choices and the
+subsequently generated feedback, which can then be extended or
+re-edited using the menu options. However this differs substantially from semantic annotation.
+Similar to WYSIWYM is \emph{GINO} (Guided Input Natural Language Ontology Editor) provides a guided,
+controlled NLI (natural language interface) for domain-independent
+ontology editing for the Semantic Web. GINO incrementally parses the
+input not only to warn the user as soon as possible about errors but
+also to offer the user (through the GUI) suggested completions of
+words and sentences---similarly to the``code assist'' feature of
+Eclipse\footnote{\url{http://www.eclipse.org/}} and other development
+environments.  GINO translates the completed sentence into triples
+(for altering the ontology) or SPARQL\footnote{\url{http://www.w3.org/TR/rdf-sparql-query/}} queries and
+passes them to the Jena Semantic Web framework. Although the guided
+interface facilitates input, the sentences are quite verbose and do
+not allow for aggregation. Static grammar rules exist for the
+controlled language but in addition, dynamic grammar rules are
+generated from the Ontology itself as an amendment of additional parsing rules to GINO's grammar in order to guide
+the user. This permits the system to handle a domain shift, however
+this is heavily dependent on any linguistic data or RDF label data
+encoded the ontology \cite{Bernstein06}. 
+
+Finally, \cite{Namgoong07} presents an Ontology based
+Controlled Natural Language Editor, similar to GINO, which uses a CFG
+(Context-free grammar) with lexical dependencies - CFG-DL to generate
+RDF triples.  To our knowledge the system ports only to RDF and does
+not cater for other Ontology languages. 
+ 
+%%
+
+\subsection{Semantic Annotation}
+Different approaches ( focus on Semi automatic + manual)
+
+%%
+While there are a plethora of tools for manual and 
+(semi-)automatic tools semantic annotation tools (which apply knowledge based approaches using applied NLP
+,machine learning techniques or both to the process), to our knowledge, very little research exists involving the
+application of controlled natural language to semantic annotation.
+%%
+
+\emph{ " A Controlled Natural Language (CNL) is a subset of a natural language whose grammar and vocabulary has been restricted in order to reduce or eliminate ambiguity and complexity"}\cite{schwitter}. CNLs have been successfully applied as natural language interfaces to enable users to communicate with the application easily without undergoing any rigourous training. 
+
+ CNLs have already been applied to ontology authoring and population \cite{Funk07}.  Previous work by the authors \cite{cnl09} tackle the problem of  applying CNLs to semantic annotation.  The process of semantic annotation according to \cite{sig2003} involves addition or association of semantic data or meta-data to the content, according to an agreed-upon ontology.  Conventionally, work on semantic annotation focused on  two-step approaches where the authoring of a document has to precede the annotation  of the same.  This problem can be overcome by adopting a \emph{latent} annotation\cite{cnl09} approach by the use of controlled languages, which merges both the authoring and annotation steps into one.  The information is encoded in the restricted vocabulary and grammatical structure of the controlled language.  However, preliminary evaluations suggest that annotating every piece of information using a CNL makes the task quite verbose, thereby demotivating the users.  Our previous work explored a simple solution to this by supplementing the CNL using templates which encode implicit domain information.  
+
+
+\section{Grammar formalisms}
+Grammar of a particular language is a list of principles and rules which direct the placement of words to form meaningful sentences of the the language. Grammars of natural langauges have been studied extensively over the past decades, and various formalisms have been defined. They can be broadly categorised into constituent and dependency based formalisms. The fundamental idea of constituency grammars is, words can be grouped into meaningful units or phrases. Context-free grammars (CFG) are the most widely used constituent formalism, described by \cite{Chomsky1956}. CFGs consist of a set of rules representing the grammar of a language, which usually recognize legitimate sentences of the language and generate a tree-like parse structure, breaking the sentence into meaningful phrases.  CFGs are better suited to work with the the syntactic knowledge that can be modelled by grammars, hence forming a backbone of our understanding of the syntax of natural languages. Dependency grammars, however, centre around the relations between various words in a sentence.  The syntactic structure of a sentence is describes in terms of words and various kinds of relations among them, thereby building relations between words instead of genrating a tree-like structure.  Link grammars, described by \cite{sleator1995parsing}, are a special kind of dependency grammars where the links/relations are directional along with an added condition where each word should be linked to atleast one other word.
+  
+A Link grammar consists of a set of words along with linking requirements of each word. The requirements also encode the directionality for each link. A sentence is said to be part of the grammar if each word in the sentence is linked to atleast one word, while satifying the requirements for each link. Furthermore, the links should not overlap. A more detailed explanation of the Link grammar is given in Sections below.
+
+Our work focusses on extracting meaningful tripples from the input controlled language. This approach places a high importance on the links between various words of a sentence. Hence we preferred a dependency based grammar instead of the usual constituent grammars. 
+Why prefer this? elaborate...
+Moreover, link grammars are known to work especially well if the lexicon of a grammar is fixed.
+who says so? reference..
+ Since we aimed to design a controlled language for the domain of meeting minutes and status reports, our lexicon is limited, hence justifying the choice of Link grammars.
+ 
+ Additionally we aim to build a guided input CNL editor which should be able to parse at every step and return a list of possible words that can act as suggestions. An link parsers can be adapted to do so, as they dont need a complete parse for any given sentence. 
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+ 
+
+
+
+
+ 
+% WYSIWYM was used initially in the
+% context of the DRAFTER project and the multilingual NLG system
+%included in DRAFTER was re-engineered for DRAFTER II \cite{Power98}.
+% DRAFTER II and WYSIWYM will most likely be deployed in
+%CLEF\footnote{\url{http://www.clinical-escience.org/}} project.  
+Perhaps the most closely related technology is the Semantic MediaWiki technology \footnote{More information about Semantic MediaWiki can be found 
+at http://semantic-mediawiki.org/wiki/Help:Introduction\_to\_Semantic\_MediaWiki \emph{as accessed on 21/06/09}} have become a popular way of adding semantics to user generated Wiki pages.
+ A  traditional wiki creates links between pages without defining the kind of linkage between pages. Semantic MediaWiki allows a user to define the links semantically, thereby adding meaning to links between pages. 
+Each concept or an instance has a page in Semantic Wiki, and each outgoing links from this page is annotated with well-defined properties as links. However this kind of approach is not suitable to the kind of 
+semantic annotation that we aim for. The Semantic Media Wiki model forces the users to use the wiki pages for content creation and to create a new page for each instance but does not offer a method to annotate arbitrary 
+text documents which are not intended to be used as wiki pages. 
+Moreover, the relational metadata represented in a Semantic Media Wiki always has the corresponding page as its subject, thereby restricting the creation and description of other relevant entities.
+
+
